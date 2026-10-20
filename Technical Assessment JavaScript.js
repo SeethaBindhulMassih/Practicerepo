@@ -143,7 +143,7 @@ console.log(id);
 const rate = products.some(product => product.price > 40000);
 console.log(rate);
 
-// 20. Check whether all products have a non-negative price
+// 20. Check whether all products have a non negative price
 const rate1 = products.every(product => product.price >= 0);
 console.log(rate1);
 
@@ -199,7 +199,7 @@ getUser2().then(user => {
 
 // 24. Access the returned user immediately without waiting
 console.log(getUser());
-
+//promise{pending}
 
 // Question 6: Async/Await
 
