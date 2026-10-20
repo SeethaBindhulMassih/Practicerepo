@@ -85,7 +85,7 @@ console.log(newArray);
 
 // Question 3: Functions
 
-// 11, 12, 13. Calculate total with default discount and validation
+// 11, 12, 13. Calculate total with default discount 
 function calculateTotal(price, quantity, discountPercentage = 0) {
     if (price < 0 || quantity < 0) {
         console.log("Price and quantity cannot be negative");
