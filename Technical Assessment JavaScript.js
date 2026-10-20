@@ -1,11 +1,11 @@
-#Technical Assessment JavaScript
+//Technical Assessment JavaScript
 
-#largestNumber
+//largestNumber
 const numbers=[10,25,30,15,40,5]
 const largest=Math.max(...numbers)
 console.log(largest)
 
-#smallestNumber
+//smallestNumber
    const numbers=[10,25,30,15,40,5]
     let smallest=numbers[0]
     for(let i=1;i<numbers.length;i++){
@@ -14,7 +14,7 @@ console.log(largest)
         }
     }
     console.log(smallest)
-#sumOfNumbers
+//sumOfNumbers
 const numbers=[10,25,30,15,40,5]
 let sum=0;
 for(let i=0;i<numbers.length;i++){
@@ -22,7 +22,7 @@ for(let i=0;i<numbers.length;i++){
 }
 console.log(sum)
 
-#newArraywithNumbersGreaterthan20
+//newArraywithNumbersGreaterthan20
 const numbers=[10,25,30,15,40,5]
 const Array =[]
 for(let i=0;i<numbers.length;i++){
@@ -32,12 +32,12 @@ for(let i=0;i<numbers.length;i++){
 }
 console.log(Array)
 
-#reverseArray
+//reverseArray
 const numbers=[10,25,30,15,40,5]
 numbers.reverse()
 console.log(numbers)
 
-#employeeid3
+//employeeid3
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -59,7 +59,7 @@ for(let i=0;i<employees.length;i++){
     }
 }
 
-#totalSalary
+//totalSalary
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -70,7 +70,7 @@ let sum=0
 employees.forEach(employee=>{sum=sum+employee.salary})
 console.log(sum)
 
-#highestSalary
+//highestSalary
  const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -80,7 +80,7 @@ console.log(sum)
 const highestSalary=employees.sort((a,b)=>b.salary-a.salary)
 console.log(highestSalary[0])
 
-#newArraywithEmployees
+//newArraywithEmployees
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -91,7 +91,7 @@ const newArray=employees.map(emp=>emp.name)
 console.log(newArray)
 
 
-#defaultdiscountofZero
+//defaultdiscountofZero
 function calculateTotal(price, quantity, discountPercentage) {
   let pay = price * quantity;
   let discount = pay * discountPercentage / 100;
@@ -101,7 +101,7 @@ function calculateTotal(price, quantity, discountPercentage) {
 
 console.log(calculateTotal(1000, 2, 10));
 
-#rejectNegativePriceandDiscountprecentagesBelowZeroorAbove100
+//rejectNegativePriceandDiscountprecentagesBelowZeroorAbove100
 
 function calculateTotal(price, quantity, discountPercentage=0) {
   if(price<0||quantity<0||discountPercentage>100||discountPercentage<0){
@@ -119,7 +119,7 @@ console.log(calculateTotal(1000, -2));
 console.log(calculateTotal(1000, 2, 110));
 
 
-###regularFunctionorArrowFunctionI would use a regular function than arrow function ,because regular function feels less complex than an arrow function.It is easy to understand
+//regularFunctionorArrowFunctionI would use a regular function than arrow function ,because regular function feels less complex than an arrow function.It is easy to understand
 
 
 #ArrayMethods
@@ -143,7 +143,7 @@ console.log(id)
 console.log(rate)
 console.log(rate1)
 
-#callgetUserandPrintreturnedUser
+//callgetUserandPrintreturnedUser
 function getUser() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -159,7 +159,7 @@ getUser()
 
   })
 
-#handlingRejectedPromiseUsingcatch()
+//handlingRejectedPromiseUsingcatch()
 
 function getUser() {
   return new Promise((resolve, reject) => {
@@ -177,7 +177,7 @@ getUser()
     console.log(error);
   });
 
-#accessingusernamethen()
+//accessingusernamethen()
 
 function getUser() {
   return new Promise((resolve, reject) => {
@@ -191,7 +191,7 @@ getUser().then(user => {
   console.log(user.name);
 });
 
-#accessingReturnedUserimmediatelyWithoutwaitingforthePromise.It will show promise{pending},we will only get the promise object and not user object
+//accessingReturnedUserimmediatelyWithoutwaitingforthePromise.It will show promise{pending},we will only get the promise object and not user object
 
 #getUserusingAwait
 function getUser() {
@@ -210,7 +210,7 @@ async function displayUser() {
 displayUser();
 
 
-#printUsernmae
+//printUsernmae
 function getUser() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -226,7 +226,7 @@ async function displayUser() {
 
 displayUser();
 
-#handleErrorUsingtry..catch
+//handleErrorUsingtry..catch
 
 function getUser() {
   return new Promise((resolve, reject) => {
@@ -247,7 +247,7 @@ async function displayUser() {
 
 displayUser();
 
-##asynchronousfunctionNamedgetOrders
+//asynchronousfunctionNamedgetOrders
 function getOrders(userId) {
   return new Promise((resolve, reject) => {
     resolve([
@@ -268,7 +268,7 @@ async function displayUser() {
 
 displayUser();
 
-#closuresIncreasingCountbyOneandCountNotAccessiblefromOutside
+//closuresIncreasingCountbyOneandCountNotAccessiblefromOutside
 function createCounter() {
   let count = 0;
 
@@ -286,7 +286,7 @@ console.log(counterA());
 console.log(counterA()); 
 console.log(counterB()); 
 
-#creatingTwoSeperateCountersandMaintainTwoIndependentCount 
+//creatingTwoSeperateCountersandMaintainTwoIndependentCount 
 function parseUser(jsonString) {
   return JSON.parse(jsonString);
 }
@@ -303,7 +303,7 @@ function parseUser(jsonString) {
 console.log(parseUser('{"name":"Arun","age":25}'));
 
 
-#checkingParsedStringConatainsNamePropertyThatisNonempty
+//checkingParsedStringConatainsNamePropertyThatisNonempty
 function parseUser(jsonString) {
   let user = JSON.parse(jsonString);
 
@@ -318,7 +318,7 @@ console.log(parseUser('{"age":25}'));
 console.log(parseUser('{"name":""}'));
              
            
-#returnsPrasedObject
+//returnsPrasedObject
 function parseUser(jsonString) {
     const user = JSON.parse(jsonString);
 
@@ -331,7 +331,7 @@ function parseUser(jsonString) {
 
 console.log(parseUser('{"name":"Arun","age":25}'));
 
-#throwingmeaningfulError
+//throwingmeaningfulError
    function parseUser(jsonString) {
     const user = JSON.parse(jsonString);
 
@@ -344,7 +344,7 @@ console.log(parseUser('{"name":"Arun","age":25}'));
 
 console.log(parseUser('{"age":25}'));
  
-#usingTryCatch
+//usingTryCatch
 function parseUser(jsonString) {
     try {
         const user = JSON.parse(jsonString);
