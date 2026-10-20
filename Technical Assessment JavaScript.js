@@ -108,9 +108,7 @@ console.log(calculateTotal(1000, 2));
 console.log(calculateTotal(1000, -2));
 console.log(calculateTotal(1000, 2, 110));
 
-// 14. Regular function or arrow function
-// I would use a regular function because I find it easier
-// to understand as a beginner.
+// 14. Regular function or arrow function I would use a regular function because I find it easier to understand.
 
 
 // Question 4: Array Methods
@@ -280,7 +278,7 @@ function parseUser(jsonString) {
     }
 }
 
-// Test each input separately so all results are displayed
+
 const testInputs = [
     '{"name":"Arun","age":25}',
     '{"age":25}',
