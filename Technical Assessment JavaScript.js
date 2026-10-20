@@ -121,8 +121,8 @@ console.log(calculateTotal(1000, 2, 110));
 
 ###regularFunctionorArrowFunctionI would use a regular function than arrow function ,because regular function feels less complex than an arrow function.It is easy to understand
 
-Question 4-Array methods
-15,16,17,18,19,20
+
+#ArrayMethods
 const products = [
   { id: 1, name: "Laptop", price: 50000, stock: 5 },
   { id: 2, name: "Mouse", price: 500, stock: 0 },
@@ -143,7 +143,8 @@ console.log(id)
 console.log(rate)
 console.log(rate1)
 
-21. function getUser() {
+#callgetUserandPrintreturnedUser
+function getUser() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({ id: 1, name: "Arun" });
@@ -158,7 +159,7 @@ getUser()
 
   })
 
-22.
+#handlingRejectedPromiseUsingcatch()
 
 function getUser() {
   return new Promise((resolve, reject) => {
@@ -176,7 +177,7 @@ getUser()
     console.log(error);
   });
 
-23.
+#accessingusernamethen()
 
 function getUser() {
   return new Promise((resolve, reject) => {
@@ -190,9 +191,9 @@ getUser().then(user => {
   console.log(user.name);
 });
 
-24.It will show promise{pending},we will only get the promise object and not user object
+#accessingReturnedUserimmediatelyWithoutwaitingforthePromise.It will show promise{pending},we will only get the promise object and not user object
 
-25. 
+#getUserusingAwait
 function getUser() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -209,7 +210,7 @@ async function displayUser() {
 displayUser();
 
 
-26.
+#printUsernmae
 function getUser() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -225,7 +226,7 @@ async function displayUser() {
 
 displayUser();
 
-27.
+#handleErrorUsingtry..catch
 
 function getUser() {
   return new Promise((resolve, reject) => {
@@ -246,7 +247,8 @@ async function displayUser() {
 
 displayUser();
 
-28. function getOrders(userId) {
+##asynchronousfunctionNamedgetOrders
+function getOrders(userId) {
   return new Promise((resolve, reject) => {
     resolve([
       { id: 101, amount: 1500 },
@@ -266,7 +268,7 @@ async function displayUser() {
 
 displayUser();
 
-29. 30
+#closuresIncreasingCountbyOneandCountNotAccessiblefromOutside
 function createCounter() {
   let count = 0;
 
@@ -284,7 +286,7 @@ console.log(counterA());
 console.log(counterA()); 
 console.log(counterB()); 
 
-31. 
+#creatingTwoSeperateCountersandMaintainTwoIndependentCount 
 function parseUser(jsonString) {
   return JSON.parse(jsonString);
 }
@@ -292,7 +294,7 @@ function parseUser(jsonString) {
 console.log(parseUser('{"name":"Arun","age":25}'));
 
 
-32. 
+#ParsesJSONstring 
 function parseUser(jsonString) {
     const user = JSON.parse(jsonString);
     return user;
@@ -301,7 +303,8 @@ function parseUser(jsonString) {
 console.log(parseUser('{"name":"Arun","age":25}'));
 
 
-33. function parseUser(jsonString) {
+#checkingParsedStringConatainsNamePropertyThatisNonempty
+function parseUser(jsonString) {
   let user = JSON.parse(jsonString);
 
   if (typeof user.name === "string" && user.name !== "") {
@@ -315,7 +318,8 @@ console.log(parseUser('{"age":25}'));
 console.log(parseUser('{"name":""}'));
              
            
-34. function parseUser(jsonString) {
+#returnsPrasedObject
+function parseUser(jsonString) {
     const user = JSON.parse(jsonString);
 
     if (typeof user.name !== "string" || user.name === "") {
@@ -327,7 +331,8 @@ console.log(parseUser('{"name":""}'));
 
 console.log(parseUser('{"name":"Arun","age":25}'));
 
-35. function parseUser(jsonString) {
+#throwingmeaningfulError
+   function parseUser(jsonString) {
     const user = JSON.parse(jsonString);
 
     if (typeof user.name !== "string" || user.name === "") {
@@ -339,7 +344,8 @@ console.log(parseUser('{"name":"Arun","age":25}'));
 
 console.log(parseUser('{"age":25}'));
  
-36. function parseUser(jsonString) {
+#usingTryCatch
+function parseUser(jsonString) {
     try {
         const user = JSON.parse(jsonString);
 
