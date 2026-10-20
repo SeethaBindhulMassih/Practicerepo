@@ -1,10 +1,12 @@
 #Technical Assessment JavaScript
 
-1. const numbers=[10,25,30,15,40,5]
+#largestNumber
+const numbers=[10,25,30,15,40,5]
 const largest=Math.max(...numbers)
 console.log(largest)
 
-2. const numbers=[10,25,30,15,40,5]
+#smallestNumber
+   const numbers=[10,25,30,15,40,5]
     let smallest=numbers[0]
     for(let i=1;i<numbers.length;i++){
         if(numbers[i]<smallest){
@@ -12,15 +14,16 @@ console.log(largest)
         }
     }
     console.log(smallest)
-
-3. const numbers=[10,25,30,15,40,5]
+#sumOfNumbers
+const numbers=[10,25,30,15,40,5]
 let sum=0;
 for(let i=0;i<numbers.length;i++){
     sum=sum+numbers[i]
 }
 console.log(sum)
 
-4. const numbers=[10,25,30,15,40,5]
+#newArraywithNumbersGreaterthan20
+const numbers=[10,25,30,15,40,5]
 const Array =[]
 for(let i=0;i<numbers.length;i++){
     if(numbers[i]>20){
@@ -29,12 +32,12 @@ for(let i=0;i<numbers.length;i++){
 }
 console.log(Array)
 
-5.
+#reverseArray
 const numbers=[10,25,30,15,40,5]
 numbers.reverse()
 console.log(numbers)
 
-6.
+#employeeid3
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -43,7 +46,7 @@ const employees = [
 ];
 const employee=employees.find(emp => emp.id === 3)
 console.log(employee)
-7.
+#employeesatIT
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -56,7 +59,7 @@ for(let i=0;i<employees.length;i++){
     }
 }
 
-8.
+#totalSalary
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -67,7 +70,8 @@ let sum=0
 employees.forEach(employee=>{sum=sum+employee.salary})
 console.log(sum)
 
-9. const employees = [
+#highestSalary
+ const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
   { id: 3, name: "Kumar", salary: 45000, department: "IT" },
@@ -76,7 +80,7 @@ console.log(sum)
 const highestSalary=employees.sort((a,b)=>b.salary-a.salary)
 console.log(highestSalary[0])
 
-10.
+#newArraywithEmployees
 const employees = [
   { id: 1, name: "Arun", salary: 25000, department: "IT" },
   { id: 2, name: "Priya", salary: 35000, department: "HR" },
@@ -87,7 +91,7 @@ const newArray=employees.map(emp=>emp.name)
 console.log(newArray)
 
 
-11.
+#defaultdiscountofZero
 function calculateTotal(price, quantity, discountPercentage) {
   let pay = price * quantity;
   let discount = pay * discountPercentage / 100;
@@ -97,7 +101,7 @@ function calculateTotal(price, quantity, discountPercentage) {
 
 console.log(calculateTotal(1000, 2, 10));
 
-12,13.
+#rejectNegativePriceandDiscountprecentagesBelowZeroorAbove100
 
 function calculateTotal(price, quantity, discountPercentage=0) {
   if(price<0||quantity<0||discountPercentage>100||discountPercentage<0){
@@ -115,7 +119,7 @@ console.log(calculateTotal(1000, -2));
 console.log(calculateTotal(1000, 2, 110));
 
 
-14.I would use a regular function than arrow function ,because regular function feels less complex than an arrow function.It is easy to understand
+###regularFunctionorArrowFunctionI would use a regular function than arrow function ,because regular function feels less complex than an arrow function.It is easy to understand
 
 Question 4-Array methods
 15,16,17,18,19,20
